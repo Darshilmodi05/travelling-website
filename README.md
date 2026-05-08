@@ -66,4 +66,4 @@ Open **http://localhost:5173** to view the site.
 ---
 
 ## 📜 License
-© 2025 Yatrika Travel Co. All rights reserved. Built with ❤️ by Kabir Ghamawala.
+© 2025 Yatrika Travel Co. All rights reserved.
