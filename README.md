@@ -1,16 +1,69 @@
-# React + Vite
+# ✈️ YATRIKA — Modern Travel & Booking Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Brevo API](https://img.shields.io/badge/Brevo_API-0092FF?style=for-the-badge&logo=mailchimp&logoColor=white)](https://www.brevo.com/)
 
-Currently, two official plugins are available:
+Yatrika is a high-end, dynamic travel website designed for modern explorers. It features a premium dark-themed interface, interactive booking systems, and a personalized traveler dashboard.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🛡️ Automated Booking System**: Integrated with **Brevo API** to send instant email confirmations to both the traveler and the administrator.
+- **👤 Personalized Dashboard**: Dynamic user profile management with real-time stat tracking (Destinations, Upcoming Trips).
+- **🌗 Smart Theme Engine**: Seamless transition between Dark and Light modes with a custom-designed toggle.
+- **📱 Ultra-Responsive Design**: Optimized for mobile, tablet, and desktop with a custom hamburger menu and fluid layouts.
+- **🎨 State-of-the-art UI**: Built with glassmorphism effects, smooth animations (Framer Motion style), and curated typography.
+- **🔍 Advanced Search & Filters**: Explore global destinations with an intuitive search interface.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technology Stack
+
+- **Frontend**: React.js (Vite)
+- **Styling**: Vanilla CSS3 (Custom Design System)
+- **Email Service**: Brevo (Sendinblue) Transactional SMTP
+- **Security**: Environment Variables (.env) & Vite Proxy for API safety
+- **Version Control**: Git & GitHub
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run Yatrika on your local machine:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Darshilmodi05/travelling-website.git
+cd travelling-website
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Environment Setup
+Create a `.env` file in the root directory and add your credentials:
+```env
+VITE_BREVO_API_KEY=your_api_key_here
+VITE_NOTIFY_EMAIL=your_email@gmail.com
+```
+
+### 4. Run Development Server
+```bash
+npm run dev
+```
+Open **http://localhost:5173** to view the site.
+
+---
+
+## 📸 Preview
+
+*(Add your screenshots here)*
+
+---
+
+## 📜 License
+© 2025 Yatrika Travel Co. All rights reserved. Built with ❤️ by Kabir Ghamawala.
