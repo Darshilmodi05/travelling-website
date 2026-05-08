@@ -1,0 +1,84 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 52px;
+  height: 52px;
+  background: #111111;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3000;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+
+  /* Hidden by default */
+  opacity: 0;
+  transform: translateY(20px) scale(0.8);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 10px 30px rgba(240, 165, 0, 0.35);
+}
+
+/* Arrow */
+.scroll-top-arrow {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  transition: transform 0.25s;
+}
+
+.scroll-top-btn:hover .scroll-top-arrow {
+  transform: translateY(-2px);
+}
+
+/* SVG Progress Ring */
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.06);
+  stroke-width: 3;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke: url(#gold-gradient);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.2s ease;
+}
+
+/* Gold gradient for ring — defined inline via filter trick */
+.progress-ring-fill {
+  stroke: var(--accent);
+  filter: drop-shadow(0 0 4px rgba(240, 165, 0, 0.6));
+}
+
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+}

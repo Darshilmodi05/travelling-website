@@ -1,0 +1,25 @@
+.destinations{background:var(--bg);}
+.filter-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:48px;flex-wrap:wrap;}
+.filter-tab{background:var(--glass);border:1px solid var(--border);color:var(--text2);font-size:14px;font-weight:500;padding:9px 22px;border-radius:50px;transition:all .3s;}
+.filter-tab:hover,.filter-tab.active{background:rgba(240,165,0,.12);border-color:var(--accent);color:var(--accent);}
+.destinations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.dest-card{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--bg2);border:1px solid var(--border);transition:all .4s;transform-style:preserve-3d;}
+.dest-card.large{grid-column:span 2;}
+.dest-card:hover{box-shadow:var(--shadow);border-color:rgba(240,165,0,.2);}
+.dest-img-wrap{height:260px;overflow:hidden;position:relative;}
+.dest-card.large .dest-img-wrap{height:320px;}
+.dest-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.dest-card:hover img{transform:scale(1.08);}
+.dest-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,17,.95) 0%,transparent 55%);}
+.dest-badge{position:absolute;top:16px;left:16px;background:rgba(17,17,17,.7);backdrop-filter:blur(10px);border:1px solid rgba(240,165,0,.3);color:var(--accent);font-size:11px;font-weight:600;padding:5px 12px;border-radius:50px;}
+.dest-info{position:absolute;bottom:0;left:0;right:0;padding:20px;}
+.dest-region{font-size:12px;color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+.dest-info h3{font-family:'Playfair Display',serif;font-size:22px;margin:6px 0;}
+.dest-info p{font-size:13px;color:var(--text2);margin-bottom:12px;}
+.dest-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.dest-rating{font-size:13px;color:#f0a500;}
+.dest-price{font-size:15px;font-weight:700;}
+.dest-btn{display:inline-block;background:var(--gold);color:#111;font-size:13px;font-weight:700;padding:8px 20px;border-radius:50px;transition:all .3s;}
+.dest-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(240,165,0,.35);}
+@media(max-width:1024px){.destinations-grid{grid-template-columns:repeat(2,1fr);}.dest-card.large{grid-column:span 2;}}
+@media(max-width:768px){.destinations-grid{grid-template-columns:1fr;}.dest-card.large{grid-column:span 1;}}

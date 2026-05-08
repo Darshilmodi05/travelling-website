@@ -1,0 +1,17 @@
+.tours{background:var(--bg);}
+.tours-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.tour-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:36px 28px;position:relative;transition:all .4s;}
+.tour-card:hover{transform:translateY(-6px);border-color:rgba(240,165,0,.2);box-shadow:var(--shadow);}
+.tour-card.featured{background:linear-gradient(135deg,#1a1400,#1f1800);border-color:rgba(240,165,0,.3);}
+.tour-tag{position:absolute;top:24px;right:24px;background:var(--gold);color:#111;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;}
+.tour-icon{font-size:40px;margin-bottom:18px;}
+.tour-card h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:12px;}
+.tour-card p{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:20px;}
+.tour-includes{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px;}
+.tour-includes li{font-size:13px;color:var(--text2);}
+.tour-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);padding-top:20px;}
+.tour-price{font-size:22px;font-weight:800;color:var(--accent);}
+.tour-price small{font-size:13px;font-weight:400;color:var(--text2);}
+.btn-sm{background:var(--gold);color:#111;font-size:13px;font-weight:700;padding:10px 22px;border-radius:50px;transition:all .3s;}
+.btn-sm:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(240,165,0,.35);}
+@media(max-width:768px){.tours-grid{grid-template-columns:1fr;}}
